@@ -8,6 +8,12 @@ Execute the following commands from the main project directory:
 ./start_frontend.sh
 ```
 
+## How to run unit tests for backend server
+```
+$PROJECT_HOME/grow/.gradlew clean test
+```
+The full test report can be found `$PROJECT_HOME/grow/build/reports/tests/test/index.html`
+
 ## APIs
 All of the APIs have been wrapped at `$PROJECT_ROOT/grow/src/main/java/com/viet/interview/web/resource/WikiResource.java`. The documentation for each API is available via JavaDocs there, but not generated.
 
