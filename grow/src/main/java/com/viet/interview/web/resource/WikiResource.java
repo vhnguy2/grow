@@ -26,6 +26,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * The resource used to intercept all publicly facing API calls related to Wikipedia operations.
+ */
 @Path("/wiki/")
 @Produces(MediaType.APPLICATION_JSON)
 public class WikiResource {
@@ -71,7 +74,8 @@ public class WikiResource {
   }
 
   /**
-   * Retrieves a list of the most viewed articles for a provided week.
+   * Retrieves a list of the most viewed articles for a provided week. A "week" is defined
+   * as [d, ..., d+6] where d is the start day.
    *
    * Example usage: http://localhost:8080/wiki/top/year/2015/month/10/week_start/31
    */
@@ -101,7 +105,8 @@ public class WikiResource {
   }
 
   /**
-   * For any given article, be able to get the view count of that specific article for a week
+   * For any given article, get the view count of that specific article for a week. A
+   * "week" is defined as [d, ..., d+6] where d is the start day.
    *
    * Example usage: http://localhost:8080/wiki/article/Albert_Einstein/stats/year/2015/month/10/week_start/01
    */
