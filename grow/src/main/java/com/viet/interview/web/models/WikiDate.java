@@ -35,4 +35,19 @@ public class WikiDate {
   public void setDay(int day) {
     this.day = day;
   }
+
+  @Override
+  public boolean equals(Object o) {
+    if (!(o instanceof WikiDate)) {
+      return false;
+    }
+
+    WikiDate d = (WikiDate) o;
+    return d.getDay() == getDay() && d.getMonth() == getMonth() && d.getYear() == getYear();
+  }
+
+  @Override
+  public int hashCode() {
+    return year * month * day;
+  }
 }
