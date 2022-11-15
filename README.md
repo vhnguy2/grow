@@ -8,6 +8,9 @@ Execute the following commands from the main project directory:
 ./start_frontend.sh
 ```
 
+## APIs
+All of the APIs have been wrapped at `$PROJECT_ROOT/grow/src/main/java/com/viet/interview/web/resource/WikiResource.java`. The documentation for each API is available via JavaDocs there, but not generated.
+
 ## Next Steps (not in scope)
 1. Stand up a datastore to cache previously retrieved data from Wiki's public APIs. We want to minimize our dependencies on Wikipedia as much as possible. Since all of the data is time-series, the data is not expected to be altered after published.
 2. Properly set up dependency injection in order to clean up some of the unnecessary boilerplate code and to have better separation of concerns.
