@@ -35,6 +35,11 @@ public class WikiResource {
 
   private static final String WIKI_BASE_URL = "https://wikimedia.org/";
 
+  // TODO(viet): Build a data layer that fetches from in-memory cache first, if fails then
+  //             fetches from database, and as a final resort fetches from Wikipedia.
+  //
+  //             As the data is retrieved, it will get stored in the cache and DB.
+
   // TODO(viet): inject these as dependencies
   private PublicWikiService service;
   private WikiCalendarUtils wikiCalendarUtils;
