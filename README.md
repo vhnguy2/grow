@@ -22,7 +22,3 @@ All of the APIs have been wrapped at `$PROJECT_ROOT/grow/src/main/java/com/viet/
 2. Properly set up dependency injection in order to clean up some of the unnecessary boilerplate code and to have better separation of concerns.
 3. Stand up a Docker container with the SDKs and libraries needed to run the server
 4. Learn some CSS to make the website prettier
-
-## TODO (in scope)
-1. Write unit tests to test date conversion, date range computation, and picking top articles
-2. Add documentation
